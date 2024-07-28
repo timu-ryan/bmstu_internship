@@ -1,0 +1,412 @@
+:root {
+    font-size: 14px;
+    --bmblue: #006CDC;
+    --bmbblue: #2499EC;
+    --bmgray: #484847;
+    --bmwhite: #f5f5f5;
+    --bmlight: #E7E7E7;
+    --bmgreen: #02F200;
+    --bmlightblue: #47CEFF;
+    --bmred: #DD161D;
+    --bmorange: #FF9200;
+    --bmdarkblue: #002C5B;
+    --bmdeepblue: #004E9F;
+    --bmdeepred: #5A0C0D;
+    --bmlightred: #EA6766;
+    --bmyellow: #EAC31B;
+    --bmbeige: #F9E59A;
+    --bmbeigedark: #614D00;
+    --bmredlight: #FFD39D;
+    --bmredlighter: #FFA3A6;
+    --bmreddark: #FF4500;
+    --bmreddarker: #6F1C03;
+    --bmreddeeplight: #FF815A;
+    --bmreddeep: #C13100;
+    --bmreddeepest: #700009;
+    --bmpink: #FFE7E8;
+    --bmlightpink: #FF5961;
+    --bmpinkdark: #C30008;
+    --bmlightpinkdark: #FF0004;
+    --bmdarkpink: #70002D;
+    --bmdeepink: #FF006E;
+    --bmdarkdeepink: #70004E;
+    --bmbluepurple: #F5A9FF;
+    --bmbluepurplelight: #DD13FF;
+    --bmbluepurpledeeplight: #5A0C6A;
+    --bmlightbluepurple: #FCE8FF;
+    --bmlightbluepurplelight: #EA66FF;
+    --bmlightbluepurpledeeplight: #9B10B9;
+    --bmbluepurpledeep: #D2AAFF;
+    --bmbluepurpledark: #8C2CFF;
+    --bmbluepurpledarkest: #39126A;
+    --bmlightbluepurpledeep: #F3E9FF;
+    --bmlightbluepurpledark: #B06DFF;
+    --bmlightbluepurpledarkest: #631FB9;
+    --bmbluegreen: #9DE3FF;
+    --bmbluegreenlight: #00B8FF;
+    --bmbluegreendeep: #004A69;
+    --bmlightbluegreen: #E6F8FF;
+    --bmlightbluegreenlight: #47CEFF;
+    --bmlightbluegreendeep: #0081B7;
+    --bmlightbluegreenlight: #A0FCFF;
+    --bmlightbluegreenlightlight: #00F9FF;
+    --bmlightbluegreenlightdeep: #006467;
+    --bmlightbluegreenlightlight: #E7FFFF;
+    --bmlightbluegreenlightlightlight: #3DFCFF;
+    --bmlightbluegreenlightlightdeep: #00AFB4;
+    --bmlightbluegreenlightlightlight: #A0FFE5;
+    --bmlightbluegreenlightlightlightlight: #00FFBE;
+    --bmlightbluegreenlightlightlightdeep: #00684C;
+    --bmlightbluegreenlightlightlight: #E8FFF8;
+    --bmlightbluegreenlightlightlightlight: #38FFD1;
+    --bmlightbluegreenlightlightlightdeep: #00B585;
+    --bmgreen: #B6FA99;
+    --bmgreenlight: #02F200;
+    --bmgreendark: #0E6100;
+    --bmyellowlight: #ECFDE5;
+    --bmyellowlightlight: #79F63E;
+    --bmyellowlightdark: #10AA00;
+    --bmyellowlightlight: #E0FB9B;
+    --bmyellowlightlightlight: #B2F500;
+    --bmyellowlightlightdark: #476300;
+    --bmyellowlightlight: #F7FDE5;
+    --bmyellowlightlightlight: #C9F742;
+    --bmyellowlightlightdark: #7DAB00;
+    --bmgraylight: #A2A2A2;
+    --bmgray: #484847;
+    --bmgraydark: #1A1A19;
+    --bmgraylightlight: #E7E7E7;
+    --bmgraylight: #767675;
+    --bmgraydark: #303030;
+}
+
+body {
+    font-family: 'ALS Sector', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: var(--bmwhite);
+    /*color: var(--bmgray);*/
+    margin: 0;
+    padding: 0;
+}
+
+p, ul {
+    font-size: 1.4em;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    font-size: 0.875em;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 0.625em;
+    background-color: var(--bmbblue);
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 5em;
+}
+
+.additional-info {
+    margin-left: 1.25em;
+    font-size: 90%;
+    color: var(--bmgray);
+}
+
+.additional-info p {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    color: var(--bmgray);
+    padding: 0.625em;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.nav-links {
+    /*margin-bottom: 2.5em;*/
+    padding: 0.3em;
+}
+
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1em;
+}
+
+.nav-links li:last-child {
+    margin-right: 10px;
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 0.625em 0.625em;
+    margin-right: 0.625em;
+    color: var(--bmgray);
+    border-radius: 0.3125em;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--bmlight);
+}
+
+.nav-links li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-links .dropdown-content li {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links .dropdown-content {
+    font-size: 100%;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 0.625em;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    top: 100%; /* Расположение под элементом */
+    left: 50%; /* Центрирование блока относительно родительского элемента */
+    transform: translateX(-50%); /* Смещение блока влево на половину его ширины */
+    min-width: 130px; /* Минимальная ширина */
+    padding: 0.5em; /* Отступы внутри блока */
+}
+
+
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-links a.active {
+    color: white;
+    background-color: var(--bmblue);
+}
+
+
+.container {
+    text-align: left;
+    max-width: 100em; /*ширина страницы*/
+    margin: auto;
+    padding: 0.625em;
+}
+
+.container p {
+    /*font-size: 1.375em;*/
+}
+
+.section { /*ширина карточек*/
+    padding: 1.25em;
+    margin: 1.25em auto;
+    background-color: white;
+    border-radius: 1.25em;
+    box-shadow: 0 0.625em 1.25em rgba(0, 0, 0, 0.1);
+}
+
+.section p {
+    margin-top: auto;
+    position: relative;
+}
+
+.section h2 {
+    text-align: center;
+    color: var(--bmblue);
+    margin: 0 0 0.625em;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25em;
+}
+
+.card {
+    text-align: center;
+    padding: 0.9375em;
+    background-color: white;
+    box-shadow: 0 0 0.25em rgba(3, 3, 3, 0.3); /* Тень по всему периметру снаружи */
+    border-radius: 0.625em;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+.card h2 {
+    color: black;
+    font-size: 1.25em;
+}
+
+.card:hover {
+    box-shadow: 0 0.1875em 0.375em var(--bmbluegreenlight);
+}
+
+.footer {
+    text-align: center;
+    background-color: var(--bmgray);
+    color: white;
+    padding: 0.625em;
+    /*position: relative;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+}
+
+.footer a {
+    color: white;
+}
+
+.footer-content {
+    margin: auto;
+}
+
+button {
+    background-color: var(--bmblue);
+    cursor: pointer;
+    color: white;
+    border: 0.125em solid var(--bmgray);
+    font-size: 1.25em;
+}
+
+/* Стиль алерта для успешных действий (зеленый) */
+.alert-success {
+    background-color: #28a745;
+    color: white;
+    padding: 1em;
+    border-radius: 0.625em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* Стиль алерта для предупреждений (желтый) */
+.alert-warning {
+    background-color: #ffc107;
+    color: #333;
+    padding: 1em;
+    border-radius: 0.625em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* Стиль алерта для ошибок (красный) */
+.alert-error {
+    background-color: #dc3545;
+    color: white;
+    padding: 1em;
+    border-radius: 0.625em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* Стиль алерта для информационных сообщений (голубой) */
+.alert-info {
+    background-color: #17a2b8;
+    color: white;
+    padding: 1em;
+    border-radius: 0.625em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* Спойлеры */
+.spoiler {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.spoiler h2 {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+    position: relative;
+}
+
+.spoiler-content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Стили для раскрытого спойлера */
+.spoiler.open .spoiler-content {
+    display: block;
+}
+
+/* Стили для стрелочки */
+.arrow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+}
+
+.spoiler.open .arrow {
+    transform: rotate(-90deg);
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        /*margin-top: 1em;*/
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/
+        gap: 0.3em;
+    }
+
+    .logo img {
+        /*max-height: 3em;*/
+        /*display: none;*/
+    }
+
+    body {
+        font-size: 80%;
+    }
+
+    .footer {
+        font-size: 80%;
+    }
+
+    .section {
+        padding: 0.625em;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}

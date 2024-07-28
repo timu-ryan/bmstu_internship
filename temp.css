@@ -1,0 +1,33 @@
+/* фото руководителя кафедры */
+.leader {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    /*margin-right: 0.625em; /* 10px вместо 10px */
+    /*margin-bottom: 1.25em; /* 20px вместо 20px */
+}
+
+.leader img {
+    width: 9.375em; /* 150px вместо 150px */
+    margin-right: 1.5625em; /* 25px вместо 25px */
+    border-radius: 0.625em; /* 10px вместо 10px */
+}
+
+.leader-info {
+    flex: 1;
+}
+
+.leader-text {
+    margin-top: auto;
+    position: relative;
+    text-align: left;
+}
+
+.leader-text strong {
+    /*font-size: 1.25em; !* 20px вместо 20px *!*/
+    margin-bottom: 0.3125em; /* 5px вместо 5px */
+}
+
+#moreText {
+    display: none;
+}
