@@ -26,19 +26,6 @@
 </noscript>
 <!--<script src="https://app.embed.im/snow.js" defer></script>-->
 <div class="navbar">
-    <a href="/"> <!-- Обертка к ссылке на главную -->
-        <div class="logo-container">
-            <div class="logo">
-                <img src="/img/gerb.png" style="margin: auto 10px;" alt="Логотип">
-                <img src="/img/logo_rk9_curves_300_png.png" alt="Логотип">
-            </div>
-            <div class="additional-info">
-                <p>Mосковский государственный технический университет имени Н.Э. Баумана<br>
-                    Факультет «Робототехника и комплексная автоматизация»</p>
-                <p><b>Кафедра РК9<br>«Компьютерные системы автоматизации производства»</b></p>
-            </div>
-        </div>
-    </a>
     <div class="nav-links">
         <ul>
             <?php
@@ -102,6 +89,19 @@
             </li>
             <!--            <li><a href="/lk" class="">Войти</a></li>-->
         </ul>
+    </div>
+    <div class="department-info">
+      <a href="/">
+        <img src="/img/gerb.png" alt="Логотип">
+      </a>
+      <p>
+        Mосковский государственный технический университет имени <span class="no-wrap">Н.Э. Баумана</span><br>
+        Факультет «Робототехника и комплексная автоматизация»
+      </p>
+      <a href="/">
+        <img src="/img/logo_rk9_curves_300_png.png" alt="Логотип">
+      </a>
+      <p><b>Кафедра РК9<br>«Компьютерные системы автоматизации производства»</b></p>
     </div>
 </div>
 <!--<button class="burger-button">Меню</button>-->

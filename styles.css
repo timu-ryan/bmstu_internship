@@ -93,6 +93,10 @@ p, ul {
     font-size: 1.4em;
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
 .badge {
     display: inline-block;
     padding: 0.25em 0.5em;
@@ -110,6 +114,7 @@ p, ul {
 .logo-container {
     display: flex;
     align-items: center;
+  justify-content: center;
 }
 
 .logo img {
@@ -128,6 +133,7 @@ p, ul {
 
 .navbar {
     display: flex;
+  flex-direction: column;
     justify-content: space-between;
     background-color: transparent;
     color: var(--bmgray);
@@ -140,6 +146,7 @@ p, ul {
 
 .nav-links {
     /*margin-bottom: 2.5em;*/
+    margin: auto;
     padding: 0.3em;
 }
 
@@ -150,12 +157,10 @@ p, ul {
 }
 
 .nav-links li {
-    display: inline;
-    margin-left: 1em;
-}
-
-.nav-links li:last-child {
-    margin-right: 10px;
+    /* display: inline;
+    margin-left: 1em; */
+    display: flex;
+    gap: 1em;
 }
 
 .nav-links a {
@@ -206,6 +211,17 @@ p, ul {
     background-color: var(--bmblue);
 }
 
+.department-info {
+    margin: 10px auto 0;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.department-info img {
+    width: 100%;
+}
 
 .container {
     text-align: left;
@@ -378,15 +394,13 @@ button {
         align-items: center;
     }
 
-    .nav-links {
-        /*margin-top: 1em;*/
-    }
-
     .nav-links ul {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        /*align-items: center;*/
-        gap: 0.3em;
+        /*align-items: center;*
+        gap: 0.3em; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .logo img {
@@ -408,5 +422,32 @@ button {
 
     .card-container {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (width <= 448px) {
+    .nav-links ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width <= 375px) {
+    .department-info {
+        grid-template-columns: 1fr;
+    }
+
+    .department-info a {
+        display: inline-block;
+        margin: auto;
+        max-width: 180px;
+    }
+
+    .department-info img {
+        width: 100%;
+    }
+
+    .department-info p {
+        text-align: center;
     }
 }
